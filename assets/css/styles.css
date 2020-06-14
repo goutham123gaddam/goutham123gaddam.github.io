@@ -5,3 +5,8 @@
 .circle{
 	border-radius: 50%;
 }
+
+.box{
+	padding: 140px;
+	width: 900px;
+}
