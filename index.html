@@ -4,8 +4,6 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>my profile</title>
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <script src="assets/javascript/index.js"></script>
 
         <!-- CSS only -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -14,9 +12,27 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="assets/css/styles.css"><!-- remember to define styles.css after the bootstrap so that the things you define in the styles are applied overriting bootstraps-->
+        <script src="assets/javascript/index.js"></script>
     </head>
     <body>
-        <h1>Hello Internet!</h1>
+        <header>
+            <nav id="header-nav" class="navbar navbar-default"><!-- navbar is the base class and navbar-default is the sub class with extrafeatures-->
+                <div class="container">
+                    <div class="navbar-header"><!-- for logo and links-->
+                        <a href="index.html" class="pull-left"><!-- for logo--><!-- that pull-left didnt happen on its own i explicitly did it-->
+                            <div id="logo-img" alt="logo image"></div>
+                        </a>
+                        <div class="navbar-brand"><!-- navbar-brand class is used to model the brand name-->
+                            <a href="index.html"><h1>Goutham Gaddam's Portfolio</h1></a><!-- usually this div is a block after the logo block.. so need to use floating concept... but dooing it in the bootstarp style by adding class pull-left to above div-->
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+        
     </body>
 </html>
 
